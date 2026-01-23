@@ -1,0 +1,260 @@
+# =============================================================================
+# Embedded Linux / Yocto / Firmware Development .gitignore
+# =============================================================================
+
+# =============================================================================
+# Yocto / OpenEmbedded Build System
+# =============================================================================
+build/
+builds/
+tmp/
+tmp-glibc/
+sstate-cache/
+downloads/
+cache/
+*.done
+*.lock
+buildhistory/
+deploy/
+
+# Yocto SDK
+poky-sdk/
+*.sh.bak
+
+# BitBake
+bitbake-cookerdaemon.log
+bitbake.lock
+*.pyc
+__pycache__/
+
+# =============================================================================
+# Linux Kernel Build
+# =============================================================================
+# Kernel build output
+*.o
+*.o.cmd
+*.a
+*.s
+*.ko
+*.ko.cmd
+*.mod
+*.mod.c
+*.mod.cmd
+modules.order
+Module.symvers
+*.order
+*.builtin
+vmlinux
+vmlinux.o
+vmlinuz
+bzImage
+zImage
+Image
+Image.gz
+*.dtb
+*.dtbo
+
+# Kernel configuration
+.config
+.config.old
+include/config/
+include/generated/
+arch/*/include/generated/
+
+# Kernel build directories
+.tmp_versions/
+.cache.mk
+.version
+.kernelrelease
+
+# =============================================================================
+# U-Boot Build
+# =============================================================================
+u-boot
+u-boot.bin
+u-boot.img
+u-boot.imx
+u-boot-dtb.imx
+u-boot-spl.bin
+SPL
+MLO
+*.cfgout
+spl/
+tpl/
+
+# =============================================================================
+# Firmware / MCU Build
+# =============================================================================
+# Binary outputs
+*.bin
+*.hex
+*.elf
+*.axf
+*.map
+*.lst
+*.srec
+*.s19
+*.s37
+
+# Build directories
+Debug/
+Release/
+output/
+out/
+_build/
+
+# ARM/GCC artifacts
+*.d
+*.i
+*.ii
+
+# =============================================================================
+# ESP-IDF (ESP32)
+# =============================================================================
+sdkconfig.old
+sdkconfig.defaults.old
+
+# =============================================================================
+# Zephyr RTOS
+# =============================================================================
+twister-out/
+sanity-out/
+
+# =============================================================================
+# IDE and Editor Files
+# =============================================================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.project
+.cproject
+.settings/
+.metadata/
+
+# MCUXpresso / Eclipse-based
+RemoteSystemsTempFiles/
+
+# CLion / IntelliJ
+.idea/
+*.iml
+cmake-build-*/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.#*
+
+# =============================================================================
+# Documentation Build
+# =============================================================================
+_build/
+*.pdf
+site/
+
+# =============================================================================
+# Debugging Files
+# =============================================================================
+*.log
+core
+core.*
+*.dump
+*.trace
+
+# GDB
+.gdb_history
+
+# OpenOCD
+*.cfg.bak
+
+# =============================================================================
+# OS and System Files
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+# Linux
+*.swp
+.directory
+
+# =============================================================================
+# Package and Dependency Management
+# =============================================================================
+node_modules/
+*.egg-info/
+*.egg
+dist/
+*.whl
+
+# Python virtual environments
+venv/
+.venv/
+ENV/
+
+# =============================================================================
+# Archives and Compressed Files
+# =============================================================================
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.rar
+*.7z
+
+# =============================================================================
+# Security - NEVER commit these!
+# =============================================================================
+# Private keys
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# Certificates (private)
+*.csr
+
+# HAB/Secure Boot keys (NXP)
+*_key.pem
+*SRK*.bin
+CSF*.bin
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+# Patch files (if generated)
+*.orig
+*.rej
+*.patch.bak
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Temporary files
+*.tmp
+*.temp
+
+# Personal notes (add your own patterns)
+NOTES.md
+TODO.md
+SCRATCH.md
