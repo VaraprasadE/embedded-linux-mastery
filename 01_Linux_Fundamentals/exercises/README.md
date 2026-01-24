@@ -2,32 +2,33 @@
 
 Hands-on practice exercises for Linux Fundamentals.
 
-## Structure
+## 📚 Available Exercises
 
-```
-exercises/
-├── 01_basic_commands/
-├── 02_shell_scripting/
-├── 03_process_signals/
-├── 04_filesystem_exploration/
-├── 05_cross_compilation/
-└── solutions/
-```
+| # | Module | Description | Difficulty |
+|---|--------|-------------|------------|
+| 01 | [Basic Commands](01_basic_commands/) | 10 command-line challenges | ⭐ Beginner |
+| 02 | [Shell Scripting](02_shell_scripting/) | 5 scripting exercises | ⭐⭐ Intermediate |
+| 03 | [Process & Signals](03_process_signals/) | Process and signal handling | ⭐⭐ Intermediate |
+| 04 | [Filesystem Exploration](04_filesystem_exploration/) | /proc, /sys, /dev exploration | ⭐⭐ Intermediate |
+| 05 | [Cross-Compilation](05_cross_compilation/) | ARM toolchain setup | ⭐⭐⭐ Advanced |
 
-## Exercise Format
+## 🎯 How to Practice
 
-Each exercise should include:
+1. Read the exercise README
+2. Try to solve without looking at solutions
+3. Compare with solutions only after attempting
+4. Repeat exercises until comfortable
 
-1. **Objective** - What you'll learn
-2. **Prerequisites** - Required knowledge
-3. **Instructions** - Step-by-step guide
-4. **Expected Output** - What success looks like
-5. **Challenges** - Extra credit tasks
+## ✅ Progress Tracking
 
-## Progress Tracking
-
-- [ ] Basic Commands Exercise
-- [ ] Shell Scripting Basics
+- [ ] Basic Commands (10 exercises)
+- [ ] Shell Scripting (5 exercises)
 - [ ] Process & Signals
-- [ ] Filesystem Deep Dive
-- [ ] Cross-Compilation Setup
+- [ ] Filesystem Exploration
+- [ ] Cross-Compilation
+
+## 🧪 Requirements
+
+- Linux environment (Ubuntu recommended)
+- For exercises 01-04: Any Linux (including WSL)
+- For exercise 05: ARM toolchain (`sudo apt install gcc-arm-linux-gnueabihf`)
