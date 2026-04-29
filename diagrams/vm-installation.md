@@ -17,7 +17,7 @@ Once you log into the Ubuntu Server console for the first time, run this single 
 # 1. Update and install the core toolchain
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y build-essential linux-headers-$(uname -r) kmod git tmux openssh-server virtualbox-guest-utils
-
+sudo apt update && sudo apt install build-essential dkms linux-headers-$(uname -r)
 # 2. Give your user permission to see the Shared Folder
 sudo usermod -aG vboxsf $USER
 
